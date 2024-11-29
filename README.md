@@ -11,6 +11,7 @@ Framework:<br>
 <h2>Installation:</h2>
 Playwright/Pytest:<br>
 1) Run <code>pip install -r requirements.txt</code> in the 'playwright/pytest' project folder or 'run_requirements.bat' from the 'scripts' folder.<br>
+2) Run <code>playwright install</code> to install the required browsers for Playwright.
 
 
 <h2>Getting Started:</h2>
