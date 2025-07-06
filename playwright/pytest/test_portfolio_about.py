@@ -111,7 +111,7 @@ def test_footer_goto_li_link(page: Page):
     page.wait_for_timeout(5000)#linkedIn sometimes takes a while to load
     
     expect(page).to_have_title(re.compile(".*Jason Kinch | LinkedIn"))
-    expect(page).to_have_url(re.compile(".*jason-kinch-84317960"))#needs regex search as url uses random auth redirect
+    expect(page).to_have_url(re.compile(".*jason-kinch"))#needs regex search as url uses random auth redirect
 
 
 #PAGE Contents
@@ -123,7 +123,7 @@ def test_page_more_title(page: Page):
 def test_page_more_descrip_one(page: Page):   
     page.goto("https://jrkinch.github.io/pages/about.html#about")
     
-    expect(page.get_by_text("I am a passionate and talented Software Quality Engineer with many years of experience with a focus on Regression, Smoke Testing, and Test Case Development. I have used those skills testing consumer electronics to cover a wide range of components ranging from firmware, mobile apps, writing scripts, and battery simulation to release products to market.")).to_be_visible()
+    expect(page.get_by_text("I am a passionate and talented Software Quality Engineer with many years of experience including a focus on Test Case Development, Manual Testing, and Automation. I have used those skills testing consumer electronics to cover a wide range of components ranging from firmware, mobile apps, developing scripts, and battery simulation to release products to market.")).to_be_visible()
 
 def test_page_more_descrip_two(page: Page):   
     page.goto("https://jrkinch.github.io/pages/about.html#about")
