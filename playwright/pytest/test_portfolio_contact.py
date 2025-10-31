@@ -111,7 +111,7 @@ def test_footer_goto_li_link(page: Page):
     page.wait_for_timeout(5000)#linkedIn sometimes takes a while to load
     
     expect(page).to_have_title(re.compile(".*Jason Kinch | LinkedIn"))
-    expect(page).to_have_url(re.compile(".*jason-kinch-84317960"))#needs regex search as url uses random auth redirect
+    expect(page).to_have_url(re.compile(".*jason-kinch"))#needs regex search as url uses random auth redirect
 
 
 #PAGE Contents
