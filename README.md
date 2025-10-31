@@ -3,11 +3,8 @@ Project to automate portfolio web site.<br><br>
 
 <h2>Description:</h2>
 Using automation to test web site with intention to use different frameworks.<br>
-<<<<<<< HEAD
 Folders are broken up into Frameworks and then separated by different programming lanugages/Frameworks.<br><br>
-=======
-Folders are broken up into Frameworks and then separated by different programming lanugages/frameworks.<br><br>
->>>>>>> d001249971d030986547bd6785a146e270c6bafe
+
 Framework:<br>
 &emsp;- Playwright.<br>
 &emsp;&emsp;- Pytest.<br>
